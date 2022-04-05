@@ -7,3 +7,5 @@ elif numero % 2 == 1:
     print('Este número é impar')
 elif numero == 0:
     print('Este número é 0')
+    
+#Posso colocar o Else no ultimo Elif
