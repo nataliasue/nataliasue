@@ -1,8 +1,10 @@
-Digite um número ao usuário e mostre se o número é positivo ou negativo
+nome_usuario = input('Nome: ')
+ano_nascimento = int(input('Ano de Nascimento: '))
+ano_atual = int(input('Ano atual: '))
 
-numero = int(input('Digite um número inteiro:')) 
+idade = ano_atual - ano_nascimento
 
-if numero >= 0:
-    print('o número é positivo')
+if idade >= 18:
+    print(f'{nome_usuario}, sua entrada foi permitida')
 else:
-    print('o número é negativo') 
+    print(f'{nome_usuario}, sua entrada não foi permitida')
