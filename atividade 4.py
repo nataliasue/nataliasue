@@ -1,8 +1,10 @@
-homemMaiorId = >= 18
-mulherMaiorId = >= 18
+def retorna_somatorio(v):
+    somatorio = 0
 
-quem_eh = input('Quem é você?')
-idade = int(input('Idade >=18'))
+for i in range(1, v + 1):
+    somatorio += i 
+return somatorio
 
-if = (quem_eh == 'Homem' or quem_eh == 'Mulher'):
-    print('Pode entrar')    
+valor = int(input('Digite aqui um valor inteiro: '))
+print(retorna_somatorio(valor))
+
