@@ -11,9 +11,14 @@ class Produto:
     
     @preco.setter
     def preco(self, novopreco):
-        if novopreco > 0:
+        novopreco = self.__preco - novopreco
+        novopreco = self.__preco * 0.10
+        if novopreco >= self.__preco:
             self.__preco = novopreco
-        
+            return True
+        else:
+            return False
+            
 
 p1 = Produto('Boné', 80, 'Boné Preto')
 p1.preco = 70
