@@ -1,10 +1,11 @@
-nome_usuario = input('Nome: ')
-ano_nascimento = int(input('Ano de Nascimento: '))
-ano_atual = int(input('Ano atual: '))
+n1 = float(input('Digite a nota 1: '))
+n2 = float(input('Digite a nota 2: '))
+n3 = float(input('Digite a nota 3: '))
 
-idade = ano_atual - ano_nascimento
+media = (n1 + n2 + n3) / 3
+print(f'A média do aluno é: {media}')
 
-if idade >= 18:
-    print(f'{nome_usuario}, sua entrada foi permitida')
+if media > 7:
+    print('Aluno aprovado.')
 else:
-    print(f'{nome_usuario}, sua entrada não foi permitida')
+    print('Aluno reprovado por média.')

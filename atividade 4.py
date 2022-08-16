@@ -1,10 +1,14 @@
-def retorna_somatorio(v):
-    somatorio = 0
+peso = float(input('Digite seu peso: '))
+altura = float(input('Digite sua altura: '))
 
-for i in range(1, v + 1):
-    somatorio += i 
-return somatorio
+imc = (peso/altura*2)
+print(f'Seu IMC é de: {imc}')
 
-valor = int(input('Digite aqui um valor inteiro: '))
-print(retorna_somatorio(valor))
-
+if imc < 18.5:
+    print('Você está abaixo do peso.')
+elif imc < 25:
+    print('Você está no seu peso normal.')
+elif imc < 30:
+    print('Você está no sobrepeso')
+elif imc > 30:
+    print('Você está na obesidade.')
