@@ -1,43 +1,127 @@
-body{
-	background: #d2d2c1 url('Textura\ selva.jpg');
-	font: 16px Arial, Helvetica, sans-serif;
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
 }
 
-#principal {
-	width: 900px;
+body {
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
 }
 
-#menu {
-	background: #c5c5b2;
-	padding: 18px;
+/*
+**** Layout ****
+*/
+#area-cabecalho {
+	background-color: #f7b600;
+	padding: 15px;
+	text-align: center;
 }
 
-#conteudo {
-	background: #e8e8d9;
+#area-logo, #area-menu {
 	padding: 10px;
 }
 
-#rodape {
-	text-align: center;
+#area-principal {
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px;
 }
 
+#area-postagens {
+	width: 660px;
+	float: left;
+}
+
+#area-lateral {
+	width: 240px;
+	float: right;
+}
+
+.postagem{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: white;
+}
+
+.conteudo-lateral {
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.postagem-lateral {
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
+}
+
+#rodape {
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background: #CCC;
+}
+
+/*
+**** Formatação do menu ****
+*/
 a {
-	color: #4b566a;
+	text-decoration: none;	
+}
+
+a:link, a:visited {
+	color: #f7b600;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+	color: #f7b600;
+	background: #FFF;
 	text-decoration: none;
-	font-weight: bold;
+}
+
+/*
+**** Formatações em geral ****
+*/
+h1 {
+	color: #4e4e4e;
+	font-size: 2.5em;
+}
+
+h2 {
+	color: #f7b600;
+}
+
+h3 {
+	color: #565656;
+	background: #CCC;
 	padding: 5px;
 }
 
-.centralizar {
-	text-align: center;
+.branco{
+	color: white;
 }
 
-.img-campanha {
-	border: 10px solid #c3c3ae;
+.data-postagem {
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
 }
 
-h1 {
-	color: #828271;
-	font-size: 1.2em;
-}
+
+
+
+
 
